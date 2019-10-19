@@ -8,6 +8,7 @@ using namespace std;
 
 void Add(Node* &node, int data)
 {
+	// creation of a tree
 	if (node == NULL)
 	{
 		node = new Node;
@@ -15,6 +16,7 @@ void Add(Node* &node, int data)
 		node->left = node->right = NULL;
 
 	}
+	// add  to the left side
 	else  if (data <= node->data)
 	{
 		if (node->left != NULL)
@@ -23,12 +25,13 @@ void Add(Node* &node, int data)
 		}
 		else
 		{
-			node->left = new Node;
+			node->left = new Node; 
 			node->left->data = data;
 			node->left->left = NULL;
 			node->left->right = NULL;
 		}
 	}
+	// add to the right side
 	else if (data >= node->data)
 	{
 		if (node->right != NULL)
@@ -81,8 +84,7 @@ bool Search(Node* node, int data)
 }
 
 Node* BSTremove(Node* node, int data)
-{
-	Node* temp ;
+{ 
 	if (node == NULL)
 	{
 		return NULL;
@@ -95,24 +97,36 @@ Node* BSTremove(Node* node, int data)
 	{
 		node->right = BSTremove(node->right, data);
 	}
-	else if (node->left && node->right)
-	{
-		temp = Minfind(node->right);
-		node->data = temp->data;
-		node->right = BSTremove( node->right, node->data);
-	}
 	else
-	{
-		temp = node;
-		if (node->left == NULL)
+	{ 
+		//No child
+		if (node->left == NULL && node->right == NULL)
 		{
-			node = node->left;
+			delete node;
+			node = NULL;
+			return node;
+		}
+		//One child
+		else if (node->left == NULL)
+		{
+			Node* temp = node;
+			node = node->right;
+			delete temp;
 		}
 		else if (node->right == NULL)
 		{
-			node = node->right;
+			Node* temp = node;
+			node = node->left;
+			delete temp;
 		}
-		delete temp;
+		// 2 children
+		else
+		{
+			Node* temp = Minfind(node->right);
+			node->data = temp->data;
+			node->right = BSTremove(node->right, temp->data);
+		}
+
 	}
 	return node;
 }
