@@ -14,4 +14,5 @@ bool Search(Node * node ,int data);// element search
 Node* BSTremove(Node* node, int data);//deleting an item
 Node* Maxfind(Node* node); // search for the greatest value
 Node* Minfind(Node* node);// search for the smallest value
+//Node* Clear(Node* node);// clear all node;
 

@@ -162,3 +162,19 @@ Node* Minfind(Node* node)
 		return Minfind(node->left);
 	}
 }
+
+//Node* Clear(Node* node)
+//{
+//	if (node == NULL)
+//	{
+//		return NULL;
+//	}
+//	else
+//	{
+//		Clear(node->left);
+//		Clear(node->right);
+//		delete node;
+//	}
+//	
+//	return NULL;
+//}

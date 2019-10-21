@@ -17,7 +17,7 @@ int main()
 		cout << "1 - Insert" << endl;
 		cout << "2 - Delete" << endl;
 		cout << "3 - Find" << endl;
-		cout << "4 - Clear" << endl;
+		cout << "4 - Clear( All node and console)" << endl;
 		cout << "5 - Exit" << endl << endl;
 		cin >> chooice;
 		if (chooice == 1)
@@ -65,7 +65,10 @@ int main()
 		}
 		if (chooice == 4)
 		{
+			//Clear(root);
+			root = NULL;
 			system("cls");
 		}
 	} while (chooice != 5);
 }
+
