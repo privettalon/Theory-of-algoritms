@@ -1,2 +1,7 @@
-﻿  Heaps.cpp
+﻿  main.cpp
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\Heaps\Heaps\main.cpp(1,10): warning C4067:  непредвиденные лексемы за директивой препроцессора, требуется newline
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\Heaps\Heaps\main.cpp(2,10): warning C4067:  непредвиденные лексемы за директивой препроцессора, требуется newline
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\Heaps\Heaps\main.cpp(3,9): warning C4067:  непредвиденные лексемы за директивой препроцессора, требуется newline
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\Heaps\Heaps\main.cpp(4,9): warning C4067:  непредвиденные лексемы за директивой препроцессора, требуется newline
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\Heaps\Heaps\main.cpp(11,8): warning C4101:  key: неиспользованная локальная переменная
   Heaps.vcxproj -> C:\Users\Santta_S\Desktop\Theory-of-algoritms\Heaps\Debug\Heaps.exe

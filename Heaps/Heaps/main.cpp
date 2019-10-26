@@ -1,27 +1,28 @@
 #include <iostream>;
 #include <stdio.h>;
+#include<stdlib.h>;
 #include"Heaps.h";
 
 using namespace std;
 
 int main()
 {
-	int key,num;
-	int arr[] = { 12, 11, 13, 5, 6, 7 };
-	int n = sizeof(arr) / sizeof(arr[0]);
-
-	HeapSort(arr, n);
-
-	cout << "Sorted array is \n";
-	PrintArray(arr, n);
-	
-	 num = HeapExtractMax(arr, n);
-	cout << num << endl;
-	cout << "lol";
-	PrintArray(arr, n);
-	cin >> num;
-
-
-
-
+	int arr[50] = { 0 };
+	int n,key,exit;
+	do {
+		cout << "enter the number of items:  ";
+		cin >> n;
+		system("cls");
+		cout << "Enter elements:\n";
+		for (int i = 0; i < n; i++)
+		{
+			cin >> arr[i];
+		}
+		system("cls");
+		HeapSort(arr, n);
+		cout << "Sorted array :" << endl;
+		PrintArray(arr, n);
+		cout << "\n\n press 0 to exit and press any button to continue (1)" << endl;
+		cin >> exit;
+	} while (exit!=0);
 }
