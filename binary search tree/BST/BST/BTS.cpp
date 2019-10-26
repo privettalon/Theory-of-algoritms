@@ -6,7 +6,7 @@
 using namespace std;
 
 
-void Add(Node* &node, int data)
+void Add(Node* node, int data)
 {
 	// creation of a tree
 	if (node == NULL)
