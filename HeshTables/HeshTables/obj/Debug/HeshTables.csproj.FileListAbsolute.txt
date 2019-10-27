@@ -1,0 +1,7 @@
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\HeshTables\HeshTables\bin\Debug\HeshTables.exe.config
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\HeshTables\HeshTables\bin\Debug\HeshTables.exe
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\HeshTables\HeshTables\bin\Debug\HeshTables.pdb
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\HeshTables\HeshTables\obj\Debug\HeshTables.csprojAssemblyReference.cache
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\HeshTables\HeshTables\obj\Debug\HeshTables.csproj.CoreCompileInputs.cache
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\HeshTables\HeshTables\obj\Debug\HeshTables.exe
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\HeshTables\HeshTables\obj\Debug\HeshTables.pdb
