@@ -1,0 +1,7 @@
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\Merge_Sort_C_sharp\Merge_Sort_C_sharp\bin\Debug\Merge_Sort_C_sharp.exe.config
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\Merge_Sort_C_sharp\Merge_Sort_C_sharp\bin\Debug\Merge_Sort_C_sharp.exe
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\Merge_Sort_C_sharp\Merge_Sort_C_sharp\bin\Debug\Merge_Sort_C_sharp.pdb
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\Merge_Sort_C_sharp\Merge_Sort_C_sharp\obj\Debug\Merge_Sort_C_sharp.csprojAssemblyReference.cache
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\Merge_Sort_C_sharp\Merge_Sort_C_sharp\obj\Debug\Merge_Sort_C_sharp.csproj.CoreCompileInputs.cache
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\Merge_Sort_C_sharp\Merge_Sort_C_sharp\obj\Debug\Merge_Sort_C_sharp.exe
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\Merge_Sort_C_sharp\Merge_Sort_C_sharp\obj\Debug\Merge_Sort_C_sharp.pdb
