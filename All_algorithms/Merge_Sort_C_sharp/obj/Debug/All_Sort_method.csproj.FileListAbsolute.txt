@@ -1,0 +1,14 @@
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\Merge_Sort_C_sharp\Merge_Sort_C_sharp\bin\Debug\Merge_Sort_C_sharp.exe.config
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\Merge_Sort_C_sharp\Merge_Sort_C_sharp\bin\Debug\Merge_Sort_C_sharp.exe
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\Merge_Sort_C_sharp\Merge_Sort_C_sharp\bin\Debug\Merge_Sort_C_sharp.pdb
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\Merge_Sort_C_sharp\Merge_Sort_C_sharp\obj\Debug\All_Sort_method.csproj.CoreCompileInputs.cache
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\Merge_Sort_C_sharp\Merge_Sort_C_sharp\obj\Debug\Merge_Sort_C_sharp.exe
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\Merge_Sort_C_sharp\Merge_Sort_C_sharp\obj\Debug\Merge_Sort_C_sharp.pdb
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\Merge_Sort_C_sharp\Merge_Sort_C_sharp\obj\Debug\All_Sort_method.csprojAssemblyReference.cache
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\All_algorithms\Merge_Sort_C_sharp\bin\Debug\Merge_Sort_C_sharp.exe.config
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\All_algorithms\Merge_Sort_C_sharp\bin\Debug\Merge_Sort_C_sharp.exe
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\All_algorithms\Merge_Sort_C_sharp\bin\Debug\Merge_Sort_C_sharp.pdb
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\All_algorithms\Merge_Sort_C_sharp\obj\Debug\All_Sort_method.csprojAssemblyReference.cache
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\All_algorithms\Merge_Sort_C_sharp\obj\Debug\All_Sort_method.csproj.CoreCompileInputs.cache
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\All_algorithms\Merge_Sort_C_sharp\obj\Debug\Merge_Sort_C_sharp.exe
+C:\Users\Santta_S\Desktop\Theory-of-algoritms\All_algorithms\Merge_Sort_C_sharp\obj\Debug\Merge_Sort_C_sharp.pdb

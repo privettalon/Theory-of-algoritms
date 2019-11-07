@@ -11,7 +11,7 @@ namespace HashTables_lab_edition_
         static void Main(string[] args)
         {
             string chooice;
-           var HashTable = new HashTables<int, string>(25);
+           var HashTable = new HashTables<int, string>(9);
             do
             {
                 Console.Clear();
