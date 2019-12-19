@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System;
 
 
 namespace Merge_Sort_C_sharp
@@ -8,6 +9,7 @@ namespace Merge_Sort_C_sharp
     {
         public static  List<int> MergeSort(List<int> unsorted)
         {
+            Program.PrintList(unsorted, 1);
             if (unsorted.Count <= 1)
             {
                 return unsorted;
@@ -28,7 +30,10 @@ namespace Merge_Sort_C_sharp
             }
 
             left = MergeSort(left);
+         
             right = MergeSort(right);
+
+
             return Merge(left, right);
 
 
@@ -62,6 +67,7 @@ namespace Merge_Sort_C_sharp
                     right.Remove(right.First<int>());
                 }
             }
+           Program.PrintList(result, 2);
             return result;
         }
     }

@@ -8,7 +8,7 @@ struct Node
 };
 
 
-void Add(Node * node, int data);//adding nodes
+void Add(Node * &node, int data);//adding nodes
 void show(Node* node, int l); // showing a tree
 bool Search(Node * node ,int data);// element search
 Node* BSTremove(Node* node, int data);//deleting an item

@@ -1,34 +1,53 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 
 namespace Merge_Sort_C_sharp
 {
     class Quick_Sort
     {
+        public static void swap (List <int> arr, int first, int second)
+        {
+            int temp = arr[first];
+            arr[first] = arr[second];
+            arr[second] = temp;
+        }
+        public static int Random (int low , int high )
+        {
+            var rand = new Random();
+            int random;
+
+            random = rand.Next(high-low+1)+low;
+           
+            return random;
+        }
+        public static int randPartition(List<int> arr, int start, int end)
+        {
+            int RandomIndex = Random(start, end);
+            swap(arr, end, RandomIndex);
+            return Partition(arr, start, end);
+            
+        }
         public static int Partition(List<int> arr, int start, int end)
         {
-            int pivot = arr[(start + end) / 2];
-            while(start<=end)
+            Console.WriteLine("Опорний елемент "+ arr[end]+"\n");
+            int pivot = arr[end];
+            int i = start;
+            for (int j = start; j <= end; j++)
             {
-                while (arr[start]<pivot)
+                if (arr[j] < pivot)
                 {
-                    start++;
-                }
-                while(arr[end]>pivot)
-                {
-                    end--;
-                }
-                if(start<=end)
-                {
-                    var temp = arr[start];
-                    arr[start] = arr[end];
-                    arr[end] = temp;
-
-                    start++;
-                    end--;
+                    int temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                    i++;
                 }
             }
-            return start;
+            int swap = arr[i];
+            arr[i] = arr[end];
+            arr[end] = swap;
+            return i;
+
         }
         public static void QuickSort(List<int> arr, int start, int end)
         {
@@ -37,7 +56,7 @@ namespace Merge_Sort_C_sharp
                 var pivot = Partition(arr, start, end);
 
                 QuickSort(arr, start, pivot-1);
-                QuickSort(arr, pivot , end);
+                QuickSort(arr, pivot+1 , end);
             }
         }
         public static int findStatistic(List<int> arr,int key)
@@ -46,20 +65,21 @@ namespace Merge_Sort_C_sharp
             int end = arr.Count-1 ;
             while(true)
             {
-                int pivot = Partition(arr, start, end);
+                int pivot = randPartition(arr, start, end);
                 if(pivot == key)
                 {
                     return arr[pivot];
                 }
-                else if(key<pivot)
+                else if(key<pivot )
                 {
-                    end = pivot;
+                    end = pivot-1;
                 }
-                else
+                else if (key > pivot)
                 {
                     start = pivot + 1;
                 }
             }
         }
+     
     }
 }

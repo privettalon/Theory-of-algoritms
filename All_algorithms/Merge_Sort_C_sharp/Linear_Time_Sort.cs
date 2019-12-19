@@ -12,29 +12,29 @@ namespace Merge_Sort_C_sharp
 
             int range = max - min + 1;
 
-            int[] count = new int[range];
-            int[] output = new int [arr.Count];
+            int[] count = new int[range]; // масив довжини від макс до мін значення
+            int[] output = new int [arr.Count]; // вихідний масив
 
-            for(int i = 0;i<arr.Count;i++)
+            for(int i = 0;i<arr.Count;i++) // заповнення масиву ренж
             {
-                count[arr[i] - min]++;
+                count[arr[i] - min]++; 
             }
 
 
-            for(int i=1;i<count.Length;i++)
+            for(int i=1;i<count.Length;i++)// додавання в масиві ренж додавання до значення пепереднього елементу
             {
                 count[i] += count[i - 1];
             }
 
 
-            for(int i = arr.Count-1;i>=0;i--)
+            for(int i = arr.Count-1;i>=0;i--)//заповнення вихідного
             {
                 output[count[arr[i] - min] - 1] = arr[i];
                 count[arr[i] - min]--;
             }
 
 
-            for(int i =0;i<arr.Count;i++)
+            for(int i =0;i<arr.Count;i++) // заповнення вхідного масиву значенями вихідного
             {
                 arr[i] = output[i];
             }

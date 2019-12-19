@@ -7,21 +7,29 @@ using namespace std;
 
 int main()
 {
+	int n=0;
 	int k;
 	int arr[50] = { 0 };
-	int n,key,exit;
+	int key,exit;
 	do
 	{
 		system("cls");
-		cout << "enter the number of items:  ";
-		cin >> n;
-		//system("cls");
 		cout << "Enter elements:\n";
-		for (int i = 0; i < n; i++)
+
+		for(int i =0;;i++)
 		{
-			cin >> arr[i];
-		}
-	//	system("cls");
+			int b;
+			cin >> b;
+			if (b != -99)
+			{
+				n++;
+				arr[i] = b;
+			}
+			else break;
+			
+			
+		} 
+		system("cls");
 		cout << "\nYour array : ";
 		PrintArray(arr, n);
 		do {
@@ -30,8 +38,9 @@ int main()
 			cout << "2.Build Max Heap" << endl;
 			cout << "3.Delete Max and build max heap" << endl;
 			cout << "4.ShowMax" << endl;
+			cout << "0.add" << endl;
 			cout << "5.Input Value" << endl;
-			cout << "6.Inpuw a new array or exit" << endl;
+			cout << "6. exit" << endl;
 			cin >> k;
 			if (k == 1)
 			{
@@ -67,10 +76,18 @@ int main()
 				cin >> key;
 				HeapSwapKey(arr, index-1, key, n);
 			}
+			if (k == 0)
+			{
+				int b;
+				cin >> b;				
+				arr[n] = b;
+				BuildMaxHeap(arr, n+1);
+				PrintArray(arr, n + 1);
+				n++;
+			
+			}
 		} while (k != 6);
-		system("cls");
-		cout << "\n\n press 0 to exit and press any button to continue (1)" << endl;
-		cin >> exit;
+		exit = 0;
 
 	} while (exit!=0);
 }
